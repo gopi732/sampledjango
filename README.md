@@ -20,6 +20,10 @@ For submission, click on the Submission text area and add the GIT REPO URL.
 
 https://github.com/gopi732/sampledjango
 
+In conclusion, you have successfully developed a simple Hello World Django app that returns a JSON response and includes an optional HTML template. The app consists of a single route that, when accessed, returns a JSON object with the message "Hello World!".
+You followed the steps to create a new Django project, including setting up a Django app, defining the route and view, configuring the project settings, and optionally creating an HTML template. You tested the app by running the Django development server and accessing the JSON response and, if applicable, the HTML template in a browser.
+Furthermore, you set up a Git repository on GitHub and pushed the entire Django project, including a README file describing how to run/start the web app and access the Hello World JSON response, to the repository.
+
 
 Optional Challenge
 
