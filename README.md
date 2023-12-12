@@ -25,12 +25,49 @@ You followed the steps to create a new Django project, including setting up a Dj
 Furthermore, you set up a Git repository on GitHub and pushed the entire Django project, including a README file describing how to run/start the web app and access the Hello World JSON response, to the repository.
 
 
-Optional Challenge
+Optional Challenge:
+
+To render a simple HTML page with a message formatted in bold, you can create a Django template and modify the view to render this template.
+
+Step 1: Create a Template
+
+Inside the HelloWorldApp directory, create a folder called templates.
+Inside templates, create a new file named hello.html.
+
+Step 2: Write HTML Template
+
+In hello.html, write the HTML code to display the "Hello World!" message in bold:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello World Page</title>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <p><strong>This is bold text!</strong></p>
+</body>
+</html>
+
+Step 3: Modify the View
+Update the views.py file in your Django app to render this template:
+
+from django.shortcuts import render
+
+def hello_world(request):
+    return render(request, 'hello.html')
+Step 4: URL Mapping
+Make sure the URL mapping in HelloWorldApp/urls.py remains the same as before.
+
+Step 5: Run the Server
+Start the Django development server:
+
+python manage.py runserver
 
 
+Step 6: Access the Rendered HTML Page
+Navigate to http://127.0.0.1:8000/hello/ in your browser. You should see the "Hello World!" message displayed in bold text according to the HTML template you created.
 
-Write a simple Template file that formats an HTML page with a message (Hello World!) in bold. 
+This modification in the view's response will render the hello.html template and return the resulting HTML document to the browser.
 
-
-
-Modify your View to render the response using the new Template and return the resulting HTML document back to the browser.
+If you then want to push these changes to your GitHub repository, follow the same steps as mentioned earlier, ensuring your updated code and template files are included.
